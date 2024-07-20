@@ -1,10 +1,18 @@
+@import './variables'; // import the _variables.scss file
+
 body {
   direction: rtl;
-  text-align: right;
-  font-family: 'Vazir', sans-serif; // Replace with your desired Persian font
   background-color: var(--cui-tertiary-bg);
 }
 
+.slider {
+  direction: rtl; /* or ltr, depending on your language direction */
+}
+
+.slider .icon {
+  margin-left: auto;
+  margin-right: 0;
+}
 .wrapper {
   width: 100%;
   @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
